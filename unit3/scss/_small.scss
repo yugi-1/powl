@@ -1,0 +1,135 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+    background-color: white;
+}
+
+
+/* HEADER  */
+header {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 51px auto;
+    align-items: center;
+	padding: .5rem 2vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+	
+} // end header
+
+/* NAVIGATION STUFF GOES HERE  */
+ul {
+    background-color: #EEF7FF;
+}
+
+nav {
+    max-width: 1200px;
+    ul li a {
+        color: #006FA2;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 2vw;
+        background-color: #EEF7FF;
+        width: auto;
+    }
+    ul li a:hover {
+        // background-color:#006FA2;
+        color: #006FA2;
+        transition: 0.3s;
+        text-decoration: underline wavy;
+    }
+    ul li.active a {color: darkorange;}
+}
+
+//logo
+
+.logo {
+    width: 250px;
+}
+h1 {
+    display: none;
+}
+.phoneicon {
+    width: 30px;
+}
+
+.phoneicon:hover {
+    cursor: pointer;
+    
+}
+
+.phonenum {
+    display: none;
+}
+
+details {
+    margin: .5rem;
+    summary {
+        background-color: lightblue;
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+
+/* MAIN  */
+main {
+ 	p {padding: .5rem 2vw; color: #333; line-height: 125%;}
+	h1 {
+        padding: 1rem 2vw .5rem 2vw; 
+        font-size: 1.5rem; 
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    .hero {width: 100%;}
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+} // end main
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    // margin-left: 10%;
+}
+section div {
+    width: 100%;
+    padding: 1rem;
+    img {
+        width: 100%;
+        height: auto;
+        border: 1px solid lightgrey;
+    }
+}
+
+/* FOOTER  */
+#footerWrapper {background-color: #006FA2; }
+footer {
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: white;
+	text-align: center;
+	a{color: #eee;}
+}
+h2 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}

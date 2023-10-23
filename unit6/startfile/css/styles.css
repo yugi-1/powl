@@ -1,0 +1,455 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* BODY  */
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  min-width: 320px;
+}
+
+/* HEADER  */
+header {
+  display: grid;
+  grid-template-columns: 51px auto auto;
+  align-items: center;
+  padding: 0.5rem 2vw;
+}
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding-left: 0.5rem;
+  color: #cc7a26;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+nav button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  padding: 0.5rem 2vw 0.5rem 1rem;
+}
+nav ul {
+  background-color: #1b1b1b;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  display: none;
+}
+nav ul.open {
+  display: block;
+}
+nav ul li {
+  border-bottom: 1px solid rgb(53, 53, 53);
+}
+nav ul li a {
+  display: block;
+  padding: 0.9rem 2vw;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  text-align: right;
+}
+
+.active {
+  background-color: #1c445e;
+}
+
+ul li a:hover {
+  background-color: #21506d;
+}
+
+/* MAIN  */
+main p {
+  padding: 0.5rem 2vw;
+  color: #333;
+  line-height: 125%;
+}
+main h1 {
+  padding: 1rem 2vw 0.5rem 2vw;
+  font-size: 1.5rem;
+  color: #265b7d;
+  font-weight: 300;
+}
+main .hero {
+  width: 100%;
+}
+main .hero img {
+  width: 100%;
+  height: auto;
+}
+
+.small-1 {
+  flex-basis: 8.3333333333%;
+}
+
+.small-2 {
+  flex-basis: 16.6666666667%;
+}
+
+.small-3 {
+  flex-basis: 25%;
+}
+
+.small-4 {
+  flex-basis: 33.3333333333%;
+}
+
+.small-5 {
+  flex-basis: 41.6666666667%;
+}
+
+.small-6 {
+  flex-basis: 50%;
+}
+
+.small-7 {
+  flex-basis: 58.3333333333%;
+}
+
+.small-8 {
+  flex-basis: 66.6666666667%;
+}
+
+.small-9 {
+  flex-basis: 75%;
+}
+
+.small-10 {
+  flex-basis: 83.3333333333%;
+}
+
+.small-11 {
+  flex-basis: 91.6666666667%;
+}
+
+.small-12 {
+  flex-basis: 100%;
+}
+
+/* FOOTER  */
+#footerWrapper {
+  background-color: #1b1b1b;
+}
+
+footer {
+  font-size: 0.85rem;
+  padding: 1rem 0;
+  color: #bbb;
+  text-align: center;
+}
+footer a {
+  color: #eee;
+}
+
+.row {
+  display: flex;
+}
+.row img {
+  width: 100%;
+  height: auto;
+}
+
+.mainHead {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 15px;
+  text-align: center;
+  color: rgb(32, 153, 117);
+}
+
+.sub {
+  color: gray;
+  font-size: 10px;
+  margin-top: 80%;
+  text-align: center;
+}
+
+.price {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 55%;
+}
+
+.blue {
+  background-color: rgb(84, 111, 230);
+}
+
+.aqua {
+  background-color: rgb(96, 195, 202);
+}
+
+.gray {
+  background-color: rgb(241, 241, 241);
+}
+
+.terms {
+  color: gray;
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 35rem) {
+  /* NAVIGATION STUFF GOES HERE  */
+  nav ul {
+    width: 200px;
+  }
+  .medium-1 {
+    flex-basis: 8.3333333333%;
+  }
+  .medium-2 {
+    flex-basis: 16.6666666667%;
+  }
+  .medium-3 {
+    flex-basis: 25%;
+  }
+  .medium-4 {
+    flex-basis: 33.3333333333%;
+  }
+  .medium-5 {
+    flex-basis: 41.6666666667%;
+  }
+  .medium-6 {
+    flex-basis: 50%;
+  }
+  .medium-7 {
+    flex-basis: 58.3333333333%;
+  }
+  .medium-8 {
+    flex-basis: 66.6666666667%;
+  }
+  .medium-9 {
+    flex-basis: 75%;
+  }
+  .medium-10 {
+    flex-basis: 83.3333333333%;
+  }
+  .medium-11 {
+    flex-basis: 91.6666666667%;
+  }
+  .medium-12 {
+    flex-basis: 100%;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin: 15px;
+    text-align: center;
+    color: rgb(32, 153, 117);
+  }
+  .price {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 55%;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  header, main {
+    max-width: 1240px;
+    margin: auto;
+  }
+  header {
+    grid-template-columns: 51px auto;
+  }
+  /* NAVIGATION STUFF GOES HERE  */
+  nav {
+    justify-self: end;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul, nav ul.open {
+    position: relative;
+    display: flex;
+    background-color: transparent;
+    width: auto;
+  }
+  nav ul li {
+    border: none;
+    justify-content: end;
+  }
+  nav ul li a {
+    color: #333;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    margin-left: 0.2rem;
+    transition: all 0.5s ease;
+  }
+  .active {
+    color: white;
+  }
+  ul li a:hover {
+    background-color: lightgray;
+    color: black !important;
+  }
+  .large-1 {
+    flex-basis: 8.3333333333%;
+  }
+  .large-2 {
+    flex-basis: 16.6666666667%;
+  }
+  .large-3 {
+    flex-basis: 25%;
+  }
+  .large-4 {
+    flex-basis: 33.3333333333%;
+  }
+  .large-5 {
+    flex-basis: 41.6666666667%;
+  }
+  .large-6 {
+    flex-basis: 50%;
+  }
+  .large-7 {
+    flex-basis: 58.3333333333%;
+  }
+  .large-8 {
+    flex-basis: 66.6666666667%;
+  }
+  .large-9 {
+    flex-basis: 75%;
+  }
+  .large-10 {
+    flex-basis: 83.3333333333%;
+  }
+  .large-11 {
+    flex-basis: 91.6666666667%;
+  }
+  .large-12 {
+    flex-basis: 100%;
+  }
+  .mainHead {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin: 15px;
+    text-align: center;
+    color: rgb(32, 153, 117);
+  }
+  .price {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 55%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,53 @@
+
+.heroMain {
+    position: relative;
+    
+    img {
+        
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    span {
+        position: absolute;
+        padding-left: 90px;
+        top: calc(80% - 20%);
+        margin: 0;
+        color: $thirdColor;
+        font-size: 70px;
+    }
+}
+
+.cards {
+    display: flex;
+   flex-wrap: initial;
+   margin-left: 20px;
+   margin-right: 20px;
+    section {
+        flex-basis: 45.9%;
+        
+    }
+}
+.bounce:hover {
+    animation: myBounce 2s 3;
+}
+
+@keyframes myBounce {
+    0% {bottom:0px; animation-timing-function:ease-out;}
+    25% {bottom:15px; animation-timing-function:ease-in;}
+    50% {bottom:0px; animation-timing-function:ease-out;}
+    75% {bottom:7pxpx; animation-timing-function:ease-in;}
+    100% {bottom:0px; animation-timing-function:ease-out;}
+}
+
+#card {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     section {
+         flex-basis: 45.9%;
+         
+     }
+    
+}

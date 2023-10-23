@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Yu Architecture</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header>
+        
+        <a href="#"><img src="images/logo1x.png" alt="logo" class="logo" width="45" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a>
+       
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav>
+        <ul>
+        <li class="active"><a  href="#">OUR WORK</a></li>
+        <li ><a href="#">ABOUT</a></li>
+        <li><a href="#">CONTACT</a></li>
+    </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+        <picture class="hero">
+            <source media="(min-width: 300px) and (max-width: 699px)" srcset="images/herosmall.webp">
+            <source media="(min-width: 700px) and (max-width: 1099px)" srcset="images/heromedium.webp">
+            <source media="(min-width: 1100px) and (max-width: 1500px)" srcset="images/herolarge.webp">
+            <img class="heroimg" alt="hero image of cityscape" src="images/hero.webp" height="9">
+
+        </picture>
+
+        <video controls  >
+            <source src="content/mymovie.mp4" type="video/mp4" />
+            <source src="content/mymovie.webm" type="video/webm" />
+            <track
+              label="English"
+              kind="subtitles"
+              srclang="en"
+              src="content/captions.vtt"
+              default />
+            <track
+              label="Español"
+              kind="subtitles"
+              srclang="es"
+              src="content/captions-sp.vtt" />
+          </video>
+          <details>
+              <summary> Video Transcript    </summary>
+                  <p>
+                    we as a society have progressed so much
+                    when it comes to the feminist movement and women empowerment or so we like to think what if I told you that I don't believe
+                  </p>
+                  <p>
+                    what if I told you that I don't believe
+                    that we have progressed as much as we
+                    </p>
+              
+          </details>
+          <!-- honestly I can't seem to figure out how to get the captions to actually show on screen -->
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p>Copyright &copy; 2023 &#x2022; Yulissa Gil. All rights reserved. 
+    </footer>
+</div> <!-- end footer wrapper -->
+   
+</body>
+</html> 

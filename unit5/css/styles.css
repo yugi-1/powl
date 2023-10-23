@@ -1,0 +1,450 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* BODY  */
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  min-width: 320px;
+  background-color: #B0413E;
+}
+
+.phonenum {
+  display: flex;
+  color: black;
+}
+
+.phonenum:hover {
+  cursor: pointer;
+  color: #ECE2D0;
+  transition: 0.3s;
+}
+
+/* HEADER  */
+#headerWrapper {
+  background-color: #B0413E;
+}
+#headerWrapper header {
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 51px auto;
+  align-items: center;
+  padding: 0.5rem 2vw;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 15px;
+}
+#headerWrapper header .logo {
+  width: 150px;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+ul {
+  background-color: #ECE2D0;
+}
+
+div#navWrapper {
+  background-color: #ECE2D0;
+}
+div#navWrapper nav {
+  max-width: 1200px;
+}
+div#navWrapper nav ul {
+  display: none;
+}
+div#navWrapper nav ul.open {
+  display: block;
+}
+div#navWrapper nav ul li {
+  border-bottom: solid 1px rgba(50, 41, 47, 0.1);
+  padding: 20px;
+}
+div#navWrapper nav ul li:hover {
+  background-color: #ECE2D0;
+}
+div#navWrapper nav ul li a {
+  color: #32292F;
+  text-decoration: none;
+  padding: 1rem 2vw;
+}
+div#navWrapper nav button {
+  padding: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #B0413E;
+  margin-left: 10px;
+}
+div#navWrapper nav button span:nth-child(1) {
+  display: block;
+}
+div#navWrapper nav button span:nth-child(2) {
+  display: none;
+}
+div#navWrapper nav button.open span:nth-child(1) {
+  display: none;
+}
+div#navWrapper nav button.open span:nth-child(2) {
+  display: block;
+}
+div#navWrapper nav button:hover {
+  cursor: pointer;
+}
+div#navWrapper nav ul li a:hover {
+  transition: 0.3s;
+}
+div#navWrapper nav ul li.active a {
+  color: #B0413E;
+}
+
+main p {
+  padding: 0.5rem 2vw;
+  color: #ECE2D0;
+  line-height: 125%;
+}
+main h1 {
+  padding: 1rem 2vw 0.5rem 2vw;
+  font-size: 1.5rem;
+  color: #ECE2D0;
+  font-weight: 300;
+}
+
+.cards section {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1 16px;
+  border: 2px solid #ECE2D0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+  background-color: white;
+}
+.cards section img {
+  display: flex;
+  justify-self: center;
+  position: relative;
+}
+.cards section h2 {
+  font-size: 30px;
+  color: #B0413E;
+  margin: 5px;
+  text-align: center;
+}
+.cards section p {
+  text-align: center;
+  padding: 10px;
+}
+.cards section a {
+  text-align: center;
+  background-color: #B0413E;
+  padding: 25px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+.cards section a:hover {
+  cursor: pointer;
+  color: black;
+  transition: 0.5s;
+}
+
+/* FOOTER  */
+#footerWrapper {
+  background-color: #32292F;
+}
+
+footer {
+  font-size: 0.85rem;
+  padding: 1rem 0;
+  color: #ECE2D0;
+  text-align: center;
+}
+
+.heroMain {
+  position: relative;
+}
+.heroMain img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.heroMain span {
+  position: absolute;
+  padding-left: 30px;
+  top: 60%;
+  margin: 0;
+  color: #ECE2D0;
+  font-size: 30px;
+}
+
+div.reviewWrapper {
+  background-color: #ECE2D0;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#card {
+  text-align: center;
+  margin: 20px;
+}
+#card section img {
+  width: 20px;
+  margin: 5px;
+}
+#card h3 {
+  margin: 2rem 16px 0 16px;
+  text-align: center;
+  color: black;
+}
+
+@media only screen and (min-width: 35rem) {
+  nav ul {
+    display: flex;
+  }
+  .heroMain {
+    position: relative;
+  }
+  .heroMain img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .heroMain span {
+    position: absolute;
+    padding-left: 30px;
+    top: 60%;
+    margin: 0;
+    color: #ECE2D0;
+    font-size: 50px;
+  }
+  main .mainContent {
+    padding-left: 10px;
+  }
+  main p {
+    padding: 16px 2vw;
+    color: #ECE2D0;
+    line-height: 125%;
+  }
+  main h1 {
+    padding: 1rem 2vw 0.5rem 2vw;
+    font-size: 2rem;
+    color: #ECE2D0;
+    font-weight: 300;
+  }
+  div#navWrapper {
+    background-color: #ECE2D0;
+  }
+  div#navWrapper nav {
+    max-width: 1200px;
+  }
+  div#navWrapper nav ul {
+    display: flex;
+  }
+  div#navWrapper nav button {
+    display: none;
+  }
+  div#navWrapper nav ul li {
+    border-bottom: solid 1px rgba(50, 41, 47, 0.1);
+    padding: 20px;
+  }
+  div#navWrapper nav ul li:hover {
+    background-color: #ECE2D0;
+  }
+  div#navWrapper nav ul li a {
+    color: #32292F;
+    text-decoration: none;
+    padding: 1rem 2vw;
+  }
+  div#navWrapper nav button:hover {
+    cursor: pointer;
+  }
+  div#navWrapper nav ul li a:hover {
+    color: #B0413E;
+    transition: 0.3s;
+  }
+  div#navWrapper nav ul li.active a {
+    color: #B0413E;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards section {
+    flex-basis: 45.9%;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  .heroMain {
+    position: relative;
+  }
+  .heroMain img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .heroMain span {
+    position: absolute;
+    padding-left: 90px;
+    top: 60%;
+    margin: 0;
+    color: #ECE2D0;
+    font-size: 70px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: initial;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .cards section {
+    flex-basis: 45.9%;
+  }
+  .bounce:hover {
+    animation: myBounce 2s 3;
+  }
+  @keyframes myBounce {
+    0% {
+      bottom: 0px;
+      animation-timing-function: ease-out;
+    }
+    25% {
+      bottom: 15px;
+      animation-timing-function: ease-in;
+    }
+    50% {
+      bottom: 0px;
+      animation-timing-function: ease-out;
+    }
+    75% {
+      bottom: 7pxpx;
+      animation-timing-function: ease-in;
+    }
+    100% {
+      bottom: 0px;
+      animation-timing-function: ease-out;
+    }
+  }
+  #card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #card section {
+    flex-basis: 45.9%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

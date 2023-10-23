@@ -1,0 +1,173 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+#pageWrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.moveOver>.content {transform: translateX(-180px);}
+.content {transition: transform 500ms ease;}
+
+/* HEADER  */
+header {
+    display: grid;
+    grid-template-columns: 51px auto 48px;
+    align-items: center;
+	padding: .5rem 2vw;
+	h1 {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        padding-left: .5rem;
+        color: $primaryColor;
+    }
+    button {
+        width: 48px;
+        height: 48px;
+        margin: 0;
+        align-self: start;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        text-align: right;
+        color: $primaryColor;
+    }
+} // end header
+
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    background-color: white;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100%);
+    div {
+       display: block;
+       text-align: center;
+       padding: 1.5rem;
+       font-size: 1.1rem;
+       background-color: $primaryColor;
+       color: white; 
+    }
+    ul li a {
+        display: block;
+        padding: .9rem .5rem;
+        text-align: right;
+        border-bottom: 1p rgba(0,0,0,0.25) solid;
+        text-decoration: none;
+        color: $primaryColor;
+    }
+    ul li a:hover {
+        background-color: $primaryColor;
+        color: white;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    li.active a {
+        color: $secondaryColor;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN  */
+main {
+ 	p {padding: .5rem 2vw; color: #333; line-height: 125%;}
+	h1 {
+        padding: 1rem 2vw .5rem 2vw; 
+        font-size: 1.5rem; 
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    .hero {width: 100%;}
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+} // end main
+
+
+
+/* FOOTER  */
+#footerWrapper {background-color: $primaryColor; }
+footer {
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: white;
+	text-align: center;
+
+}
+
+
+
+#cards {
+
+    section {
+        display: grid;
+        grid-template-areas: "name" "photo" "address" "phone";
+        background-color: $primaryColor;
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+      
+        margin: 20px;
+    }
+    section:hover {
+        cursor: pointer;
+        background-color: $secondaryColor;
+        transition: 0.5s;
+    }
+    img {
+        padding: 10px 0 10px 0;
+        grid-area: photo;
+        width: 100%;
+        height: auto;
+        
+    }
+   
+    h2 {
+        grid-area: name;
+    }
+    address {
+        grid-area: address;
+        padding: 10px 0 10px 0;
+    }
+    a {
+        grid-area: phone;
+        text-decoration: none;
+        color: white;
+
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}

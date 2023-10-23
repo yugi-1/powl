@@ -1,0 +1,17 @@
+div.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    section {
+        flex-basis: 45.9%; //sass calc not making page responsive
+    }
+}
+#footerWrapper footer div {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-self: center;
+
+}
+.social{
+    margin-left: 150px;
+}

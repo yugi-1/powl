@@ -1,0 +1,145 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+/* HEADER  */
+header {
+    display: grid;
+    grid-template-columns: 51px auto auto;
+    align-items: center;
+	padding: .5rem 2vw;
+	h1 {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        padding-left: .5rem;
+        color: $primaryColor;
+    }
+} // end header
+
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: transparent;
+        border: none;
+        font-size: 2rem;
+        color: #333;
+        padding: .5rem 2vw .5rem 1rem;
+    }
+    ul {
+        background-color: #1b1b1b;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        display: none;
+
+    }
+    ul.open {display: block;}
+    ul li {border-bottom: 1px solid rgb(53, 53, 53);}
+    ul li a {
+        display: block;
+        padding: .9rem 2vw;
+        font-weight: $lightWeight;
+        color: white;
+        text-decoration: none;
+        text-align: right;
+    }
+   
+    
+}
+
+
+.active  {background-color: darken($color: $menuColor, $amount: 8%);}
+ul li a:hover {background-color: darken($color: $menuColor, $amount: 4%);}
+
+
+
+/* MAIN  */
+main {
+  
+ 	p {padding: .5rem 2vw; color: #333; line-height: 125%;}
+	h1 {
+        padding: 1rem 2vw .5rem 2vw; 
+        font-size: 1.5rem; 
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    .hero {width: 100%;}
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+} // end main
+
+//create for loop
+@for $i from 1 through 12 {
+    $w: calc($i / 12) *100%;
+    .small-#{$i} {flex-basis: $w;}
+}
+
+/* FOOTER  */
+#footerWrapper {background-color: #1b1b1b; }
+footer {
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: #bbb;
+	text-align: center;
+	a{color: #eee;}
+}
+.row {
+    display: flex;
+    img {
+        width: 100%;
+        height: auto;
+       
+    }
+}
+
+.mainHead {
+    text-align: center;
+    
+}
+h2 {
+    font-size: 1rem;
+    margin: 15px;
+    text-align: center;
+    color: rgb(32, 153, 117);
+}
+.sub {
+    color: gray;
+    font-size: 10px;
+    margin-top: 80%;
+    text-align: center;
+}
+.price {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 55%;
+
+}
+.blue {
+    background-color: rgb(84, 111, 230);
+}
+.aqua {
+    background-color: rgb(96, 195, 202);
+}
+.gray {
+    background-color: rgb(241, 241, 241);
+}
+.terms {
+    color: gray;
+    font-size: 10px;
+}

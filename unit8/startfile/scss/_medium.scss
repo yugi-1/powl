@@ -1,0 +1,40 @@
+/* NAVIGATION STUFF GOES HERE  */
+
+nav {
+ 
+    button {
+        display: none;
+    }
+    ul {
+        display: flex;
+        justify-content: left;
+      li {
+        padding-left: 10px;
+      }
+    }
+
+}
+
+.hero  {
+  div {
+      left: 30px;
+      h3 {
+          font-size: 2rem;
+      }
+  }
+  
+ 
+
+}
+
+.speakers {
+  width: 300px;
+}
+
+.card {
+  width: 400px;
+}
+.mainContent {
+  display: flex;
+  justify-content: center;
+}

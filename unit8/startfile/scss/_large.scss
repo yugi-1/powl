@@ -1,0 +1,19 @@
+header, nav, main {
+    max-width: 100%;
+    margin: auto;
+}
+
+.hero  {
+  div {
+      left: 50px;
+      h3 {
+          font-size: 3rem;
+      }
+  }
+
+}
+
+.cards {
+display: flex;
+justify-content: center;
+}

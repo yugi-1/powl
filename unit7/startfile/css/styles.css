@@ -1,0 +1,374 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* BODY  */
+body {
+  display: grid;
+  font-family: "Young Serif", serif;
+  font-size: 16px;
+  font-weight: 300;
+  min-width: 320px;
+  background-color: #EDF6FF;
+}
+
+div#headerWrapper {
+  grid-row-start: 1;
+}
+
+/* HEADER  */
+header {
+  display: grid;
+  grid-template-columns: 51px auto 44px;
+  align-items: center;
+  padding: 0.5rem 2vw;
+}
+header div#phone {
+  display: none;
+}
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding-left: 0.5rem;
+  color: #475B63;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+div#navWrapper {
+  grid-row-start: 4;
+}
+div#navWrapper nav {
+  height: 100vh;
+}
+div#navWrapper nav ul li a {
+  display: block;
+  color: #333;
+  padding: 0.9rem 2vw;
+  text-decoration: none;
+  text-align: center;
+}
+div#navWrapper nav ul li a:hover {
+  color: #475B63;
+  transition: 0.5s;
+}
+
+p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.active {
+  border-left: 10px solid #475B63;
+  background-color: white;
+}
+
+.formH {
+  color: #475B63;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px lightblue;
+}
+
+/* MAIN  */
+div#mainWrapper {
+  grid-row-start: 2;
+}
+
+main p {
+  padding: 0.5rem 2vw;
+  color: #333;
+  line-height: 125%;
+}
+main h1 {
+  padding: 1rem 2vw 0.5rem 2vw;
+  font-size: 1.5rem;
+  color: #011C27;
+  font-weight: 300;
+}
+main .hero {
+  width: 100%;
+}
+main .hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER  */
+#footerWrapper {
+  background-color: #475B63;
+}
+
+footer {
+  grid-row-start: 3;
+  font-size: 0.85rem;
+  padding: 1rem 0;
+  color: white;
+  text-align: center;
+}
+footer a {
+  color: #eee;
+}
+
+div#hamburger a, div#closex a {
+  display: block;
+  padding: 0.8rem 2vw;
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  text-align: right;
+}
+
+div#closex a {
+  margin-right: 2vw;
+}
+
+.hding {
+  color: #7BB6EC;
+}
+
+form.my-form {
+  margin: 1rem 16px;
+}
+form.my-form label {
+  display: block;
+  font-size: 0.8rem;
+  color: #475B63;
+  padding-top: 0.2rem;
+}
+form.my-form input[type=text],
+form.my-form input[type=tel],
+form.my-form input[type=number],
+form.my-form input[type=email],
+form.my-form input[type=password],
+form.my-form input[type=date],
+form.my-form select {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 0 0;
+  font-size: 1rem;
+  color: #475B63;
+  width: 250px;
+  padding: 0.5rem 16px;
+  border: none;
+}
+form.my-form input:required {
+  border-left-style: solid;
+  border-left-width: thick;
+  border-left-color: red;
+}
+form.my-form input:required:focus {
+  border-left-style: solid;
+  border-left-width: thick;
+  border-left-color: gray;
+}
+form.my-form input:required:valid {
+  border-left-style: solid;
+  border-left-width: thick;
+  border-left-color: green;
+}
+
+input[type=submit] {
+  border: none;
+  color: white;
+  background-color: #475B63;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 2rem 0;
+  width: 250px;
+  font-size: 1.2rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+@media only screen and (min-width: 35rem) {
+  /* NAVIGATION STUFF GOES HERE  */
+  header {
+    grid-template-columns: 51px auto auto;
+    border-bottom: 1px solid white;
+    -webkit-box-shadow: 0px 7px 59px -29px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 0px 7px 59px -29px rgba(0, 0, 0, 0.52);
+    box-shadow: 0px 7px 59px -29px rgba(0, 0, 0, 0.52);
+  }
+  header div#phone {
+    display: block;
+    justify-self: end;
+  }
+  header div#phone a {
+    color: #011C27;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  header div#phone a:hover {
+    color: #475B63;
+    transition: 0.5s;
+  }
+  div#hamburger, div#closex {
+    display: none;
+  }
+  div#navWrapper nav {
+    height: auto;
+  }
+  div#navWrapper nav ul {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
+  div#navWrapper nav ul li {
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .active {
+    border: none;
+  }
+  div#headerWrapper {
+    grid-row-start: 1;
+  }
+  div#navWrapper {
+    grid-row-start: 2;
+  }
+  div#mainWrapper {
+    grid-row-start: 3;
+  }
+  div#footerWrapper {
+    grid-row-start: 4;
+  }
+  p {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  header, nav, main {
+    max-width: 1240px;
+    margin: auto;
+  }
+  /* NAVIGATION STUFF GOES HERE  */
+  div#navWrapper nav {
+    height: auto;
+  }
+  div#navWrapper nav ul {
+    display: flex;
+    justify-content: end;
+    border: none;
+  }
+  div#navWrapper nav ul li a {
+    padding: 0.2rem 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

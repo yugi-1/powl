@@ -1,0 +1,365 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* BODY  */
+body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+  font-weight: 300;
+  min-width: 320px;
+  background-color: #EDEBD7;
+}
+
+div#headerWrapper {
+  width: 100%;
+}
+
+/* HEADER  */
+header {
+  display: flex;
+  grid-template-columns: 51px auto;
+  align-items: center;
+  padding: 0.5rem 2vw;
+  background-color: #FFBD24;
+}
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding-left: 0.5rem;
+  color: #423E37;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+button {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #EDEBD7;
+  padding: 0.5rem 2vw 0.5rem 1rem;
+  background-color: #1b1b1b;
+}
+
+button span:nth-child(1) {
+  display: block;
+}
+
+button span:nth-child(2) {
+  display: none;
+}
+
+button.open span:nth-child(1) {
+  display: none;
+}
+
+button.open span:nth-child(2) {
+  display: block;
+  color: #FFBD24;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #FFBD24;
+}
+
+nav {
+  background-color: #1b1b1b;
+}
+
+ul {
+  background-color: #1b1b1b;
+  position: relative;
+  right: 0;
+  width: 100%;
+  display: none;
+}
+
+ul.open {
+  display: block;
+}
+
+ul li {
+  border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+ul li a {
+  display: block;
+  padding: 0.9rem 2vw;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+}
+
+ul li a:hover {
+  color: #FFBD24;
+  transition: 1s;
+}
+
+.active a {
+  color: #FFBD24;
+}
+
+.heading2 {
+  font-size: 35px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+/* MAIN  */
+main p {
+  padding: 0.5rem 2vw;
+  color: #333;
+  line-height: 125%;
+}
+main h1 {
+  padding: 1rem 2vw 0.5rem 2vw;
+  font-size: 1.5rem;
+  color: #FFBD24;
+  font-weight: 300;
+}
+main .hero {
+  width: 100%;
+}
+main .hero img {
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER  */
+#footerWrapper {
+  background-color: #423E37;
+}
+
+footer {
+  font-size: 0.85rem;
+  padding: 1rem 0;
+  color: #EDEBD7;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+}
+.hero video {
+  width: 100%;
+  height: auto;
+}
+.hero div {
+  position: absolute;
+  top: 50%;
+  color: #FFBD24;
+  left: 10px;
+}
+.hero div h3 {
+  text-shadow: 0 0 5px black;
+  font-size: 1.5rem;
+}
+
+.mtext {
+  padding-left: 20px;
+}
+
+.cards {
+  display: grid;
+}
+
+.card {
+  perspective: 40rem;
+}
+
+.card-body {
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.card:hover .card-body {
+  transform: rotateX(-180deg);
+}
+
+.card-front, .card-back {
+  backface-visibility: hidden;
+}
+
+.card-back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: rotateX(-180deg);
+}
+
+.card-front, .card-back {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  margin: 20px;
+  border-radius: 0.25rem;
+  color: white;
+}
+
+.speakers {
+  width: 100%;
+}
+
+@media only screen and (min-width: 35rem) {
+  /* NAVIGATION STUFF GOES HERE  */
+  nav button {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    justify-content: left;
+  }
+  nav ul li {
+    padding-left: 10px;
+  }
+  .hero div {
+    left: 30px;
+  }
+  .hero div h3 {
+    font-size: 2rem;
+  }
+  .speakers {
+    width: 300px;
+  }
+  .card {
+    width: 400px;
+  }
+  .mainContent {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  header, nav, main {
+    max-width: 100%;
+    margin: auto;
+  }
+  .hero div {
+    left: 50px;
+  }
+  .hero div h3 {
+    font-size: 3rem;
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

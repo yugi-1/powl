@@ -1,0 +1,70 @@
+
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    max-width: none;
+    display: flex;
+    justify-content: right;
+    margin-left: 100px;
+    button {display: none;} 
+    margin-bottom: 20px;
+}
+div#navWrapper {
+
+    background-color: transparent;
+    nav ul.open {
+        display: flex;
+    }
+    nav ul li {
+        border: none;
+    }
+    nav ul li a {
+    color: $secondaryColor;
+    text-decoration: none;
+    
+    }
+    nav ul li:hover {
+        background-color: transparent;
+    }
+    nav ul li a:hover {
+        color: #5FB9BA;
+        text-decoration: none;
+        background-color: transparent;
+        
+        }
+        nav ul li.active {
+            background-color: transparent;
+            a {
+                color: #02869F;
+            }
+            
+        }
+    nav ul, ul.open {
+        display: flex;
+        border: none;
+    }
+}
+
+
+
+header {
+    .logo {
+        width: 220px;
+        margin-left: 100px;
+    }	
+}
+div.menu {
+    gap: $gutter;
+    section {
+        flex-basis: calc((60.6%/2))
+    }
+}
+#footerWrapper footer div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+  
+}
+.social{
+    margin-left: 0;
+    margin-right: 150px;
+}

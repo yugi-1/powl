@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>North Star University</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
+
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header>
+        <img src="images/logox1.webp" alt="logo" class="logo" width="150" srcset="images/logox1.webp 1x, images/logox2.webp 2x, images/logox3.webp 3x">
+		<h1 class="hding">North Star University</h1>
+        <div id="hamburger"><a href="#closex">&#x2630;</a></div>
+        <div id="phone"><a href="tel:5555555555">555-555-5555</a></div>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav>
+        <div id="closex"><a href="#hamburger">x</a></div>
+
+        <ul>
+        <li class="active" ><a href="#" >Apply</a>
+
+        <li><a href="#">Student Portal</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Faculty</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+        <picture class="hero">
+            <img src="images/hero.webp" alt="people graduating" width="1600" height="600">
+        </picture>
+        
+        <h1>Apply</h1>
+       <p>Thank you for your interest in North Star University.
+           As part of the application process, you must create an account
+           in order to track your admission documents and receive information from us. Sections with a 
+           red border are required information. If you have any questions, please contact the Admissions Office
+           at 555-555-5555.
+       </p>
+
+
+
+<form method="GET" action="thanks.html" class="my-form" autocomplete="on">
+    <h2 class="formH">Contact Information</h2>
+    <label>First Name:</label>
+    <input type="text" name="fname" autocomplete="given-name" required title="First Name Here">
+
+    <label>Last Name:</label>
+    <input type="text" name="lname" autocomplete="family-name" required title="Last Name Here">
+
+    <label>Cell Phone:</label>
+    <input type="tel" name="phone" autocomplete="tel" required title="Your Phone Number Please">
+
+    <label>Email:</label>
+    <input type="email" name="emailad" autocomplete="email" required title="Your Email Please">
+    <label>Address:</label>
+    <input type="text" name="add" autocomplete="on" title="Your Address">
+
+    <label>City:</label>
+    <input type="text" name="cit" autocomplete="address-level2" title="City Namee">
+
+    <label>State:</label>
+    <input type="text" name="st" autocomplete="address-level1"  title="State">
+
+    <label>Zip Code:</label>
+    <input type="text" name="zc" autocomplete="postal-code" title="Zip Code">
+
+
+ <h2 class="formH">Communication Preferences</h2>
+ <label><input type="radio">Text</label>
+ <label><input type="radio">Email</label>
+ <label><input type="radio">Mail</label>
+
+
+<h2 class="formH">Previous School Information</h2>
+<label> School Type
+</label>
+<select>
+    <option value="No Selection Made" >Please Select</option>
+    <option value="In State" >In State</option>
+    <option value="Out of State" >Out of State</option>
+</select>
+
+
+<label>High School Graduation Date
+    
+</label>
+<input type="date" name="grad date">
+
+
+<h2 class="formH">Education Completed</h2>
+
+<label><input type="checkbox" name="ged">GED</label>
+<label><input type="checkbox" name="high school diploma">Highschool Diploma</label>
+<label><input type="checkbox" name="two year">Two Year Associates Degree</label>
+
+<h2 class="formH">Account Information</h2>
+<label>Username (6-10 letters)</label>
+<input minlength="5" maxlength="10" type="text" name="user" autocomplete="on" required title="create username">
+
+<label>Password (at least 6 characters long)<input type="password" name="pass" minlength="6" autocomplete="off" required title="create password"></label>
+
+    <input type="submit" value="Create My Account">
+</form>
+
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p> &copy; 2023 &#x2022; Yulissa Gil
+            </p>
+    </footer>
+</div> <!-- end footer wrapper -->
+   
+</body>
+</html> 

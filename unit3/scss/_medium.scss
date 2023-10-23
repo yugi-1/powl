@@ -1,0 +1,17 @@
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    ul {
+        display: flex;
+        justify-content: space-between;
+       padding-left: 80px;
+        padding-right: 80px;
+    }
+
+}
+h1 {
+    display: flex;
+    color: black;
+}
+section {
+    grid-template-columns: 1fr 1fr;
+}

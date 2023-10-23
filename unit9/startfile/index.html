@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>YuLandscape</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+	<header>
+        <img src="images/logo1x.png" alt="logo" class="logo" width="55" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x">
+		<h1>YuLandscape</h1>
+        <div id="phone"><a href="tel:5555555555">555-555-5555</a></div>
+	</header>
+</div><!-- end header wrapper -->
+
+    
+    
+<div id="navWrapper">
+    <nav>
+        <button id="hamburgerBtn">&#9776;</button>
+        <ul id="primaryNav">
+        <li class="active"><a href="#">Services</a>
+
+        <li class="parent"><a href="#">Information</a>
+        <ul>
+            <li><a href="#">Lawn Care</a>
+            <li><a href="#">Tools</a>
+            <li><a href="#">Bugs</a>
+        </ul>
+        </li>
+        
+        <li><a href="#">Our Team</a></li>
+        <li><a href="#">Get a Quote</a></li>
+    </ul>
+    </nav>
+</div> <!-- end nav wrapper -->
+
+<div id="mainWrapper">
+    <main>
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide" >
+                    <picture>
+                        <source srcset="./images/kois.webp" media="(max-width: 400px)">
+                        <source srcset="./images/koim.webp" media="(max-width: 800px)">
+                        <img src="./images/koi.webp" alt="sliderA" width="16" height="5">
+                    </picture>
+                </div>
+
+                <div class="swiper-slide" >
+                    <picture>
+                        <source srcset="./images/landscapes.webp" media="(max-width: 400px)">
+                        <source srcset="./images/landscapem.webp" media="(max-width: 800px)">
+                        <img src="./images/landscape.webp" alt="sliderB" width="16" height="5">
+                    </picture>
+                </div>
+
+                <div class="swiper-slide" >
+                    <picture>
+                        <source srcset="./images/porchs.webp" media="(max-width: 400px)">
+                        <source srcset="./images/porchm.webp" media="(max-width: 800px)">
+                        <img src="./images/porch.webp" alt="sliderC" width="16" height="5">
+                    </picture>
+                </div>
+              <!-- <div class="swiper-slide"><img src="./images/landscape.webp"></div>
+              <div class="swiper-slide"><img src="./images/porch.webp"></div> -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+          </div>
+        
+        <h1>See what some of our customers have to say!</h1>
+       
+        <div class="reviews">
+            <section>
+                <img src="./images/g1.jpg" alt="customer one" height="350" width="350">
+                <p>We were having trouble with our sprinkler system and they came highly recommended. I was able to get a consultation done first and an estimate of charges. After that I was put on their schedule and less than a week later they came and got to work.
+                    The crew was very informative and helpful when they got here. They answered any questions and were even able to do some additional work for us that was not on their schedule.</p>
+                <!-- <img src="./images/g2" alt="customer two" height="386" width="378"> -->
+            </section>
+
+            <section>
+                <img src="./images/g2.jpg" alt="customer two" height="386" width="378">
+                <p>Tony and his team tore out old sod and replaced our whole front lawn. It looks great! They returned calls and texts quickly and were able to get the job done within a couple weeks. They were friendly, professional, and efficient. We very much appreciate the time they took to do a smaller job in this crazy market. They paid attention to detail and did a thorough clean up at the end.</p>
+        
+            </section>
+        </div>
+
+        <div class="cards">
+            <section>
+                <h2>Normal Grass</h2>
+                <img src="./images/first.webp" alt="picture of landscaping" width="400" height="250">
+                <img src="./images/grass.png" alt="picture of grass png edge" width="400" height="250">
+            </section>
+
+            <section>
+                <h2>Premium Grass </h2>
+                <img src="./images/first.webp" alt="picture of landscaping" width="400" height="250">
+                <img src="./images/grass2.png" alt="picture of grass png edge" width="400" height="250">
+            </section>
+
+            <!-- //svgs -->
+            <section>
+                <h2>Get $50 towards your service for referring or reviewing!</h2>
+                <img src="./images/second.jpeg" alt="picture of landscaping" width="400" height="250">
+                <img class="svgs" src="./images/stars1.svg" alt="picture of stars png edge" width="400" height="250">
+            </section>
+
+            <section>
+                <h2>4th of July Deal! 
+                    Spend over $5,000 earn a $500 gift card!</h2>
+                <img src="./images/second.jpeg" alt="picture of landscaping" width="400" height="250">
+                <img src="./images/stars2.svg" alt="picture of stars png edge" width="400" height="250">
+            </section>
+
+
+        </div>
+
+
+    </main>
+</div><!-- end main wrapper -->
+    
+<div id="footerWrapper">
+    <footer>
+        <p> &copy; 2023 &#x2022; Yulissa Gil
+        </p>
+    </footer>
+</div> <!-- end footer wrapper -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   <script src="./js/script.js" type="module"></script>
+</body>
+</html> 
